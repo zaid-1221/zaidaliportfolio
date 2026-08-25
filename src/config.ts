@@ -1,192 +1,103 @@
 export const config = {
     developer: {
-        name: "Redoyanul",
-        fullName: "Redoyanul Haque",
-        title: "AI & Full-Stack Developer",
-        description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
+        name: "Zaid",
+        fullName: "Zaid Ali",
+        title: "Web Developer",
+        description: "Web Developer with 1+ year of professional experience building responsive and modern web applications using React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, Ruby on Rails, and REST APIs."
     },
     social: {
-        github: "red1-for-hek",
-        email: "redoyanul1234@gmail.com",
-        location: "Bangladesh"
+        github: "",
+        email: "zaidali9585@gmail.com",
+        location: "Lahore, Pakistan",
+        phone: "+92 302 1942137"
     },
     about: {
         title: "About Me",
-        description: "I am a self-taught AI & Full-Stack Developer from Bangladesh. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas."
+        description: "I am a Web Developer based in Lahore, Pakistan, with 1+ year of professional experience building responsive and modern web applications. I specialize in React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, Ruby on Rails, and REST APIs. I develop scalable user interfaces, integrate backend APIs, collaborate with cross-functional teams, and deliver production-ready applications using Git and modern development workflows. I speak Punjabi and Urdu natively, with professional fluency in English."
     },
     experiences: [
         {
-            position: "Learning Something New",
-            company: "Self-Development",
-            period: "2025 - Present",
-            location: "Bangladesh",
-            description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
+            position: "Front-End Developer",
+            company: "2WayClick",
+            period: "2025 - 2026",
+            location: "Lahore, Pakistan",
+            description: "Developed responsive and user-friendly web applications using React, TypeScript, HTML, CSS, and JavaScript. Collaborated with Ruby on Rails backend developers and designers to ship production features from Figma to deployment.",
             responsibilities: [
-                "Researching cutting-edge AI and ML technologies",
-                "Experimenting with new frameworks and tools",
-                "Contributing to open-source projects",
-                "Building innovative personal projects"
+                "Built reusable UI components with Tailwind CSS and Bootstrap for consistent design",
+                "Integrated REST APIs and handled asynchronous data efficiently",
+                "Collaborated with Ruby on Rails backend developers to implement new features",
+                "Fixed UI bugs, improved performance, and optimized user experience",
+                "Converted Figma designs into responsive web interfaces",
+                "Used Git/GitHub for version control, code reviews, and team collaboration",
+                "Participated in testing, debugging, deployment, and ongoing maintenance"
             ],
-            technologies: ["Research", "Innovation", "Open Source", "New Tech"]
+            technologies: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Bootstrap", "REST APIs", "Git"]
         },
         {
-            position: "AI Engineer",
-            company: "Freelance & Projects",
-            period: "2025",
-            location: "Bangladesh",
-            description: "Developing intelligent AI systems, chatbots, and machine learning solutions. Building next-gen conversational AI agents and JARVIS-like personal assistants.",
+            position: "BS Cybersecurity (In Progress)",
+            company: "NCBA&E University",
+            period: "Present",
+            location: "Lahore, Pakistan",
+            description: "Pursuing a Bachelor of Science in Cybersecurity with a CGPA of 3.0 / 4.0, building a strong foundation in secure systems alongside professional web development work.",
             responsibilities: [
-                "Building AI-powered chatbots and conversational agents",
-                "Developing machine learning models with TensorFlow and PyTorch",
-                "Working with LLMs and transformer architectures",
-                "Creating autonomous AI systems and automation tools"
+                "Studying cybersecurity fundamentals and secure application practices",
+                "Applying academic knowledge to real-world web development projects",
+                "Balancing coursework with professional software delivery"
             ],
-            technologies: ["Python", "TensorFlow", "PyTorch", "LLMs", "NLP", "AI Agents"]
-        },
-        {
-            position: "Full-Stack Developer",
-            company: "Freelance & Projects",
-            period: "2024",
-            location: "Bangladesh",
-            description: "Built complete web applications from frontend to backend. Developed responsive UIs, RESTful APIs, and database solutions for various clients and projects.",
-            responsibilities: [
-                "Developing full-stack web applications using React and Node.js",
-                "Building RESTful APIs and integrating databases",
-                "Creating responsive and interactive user interfaces",
-                "Deploying and maintaining web applications"
-            ],
-            technologies: ["React", "Node.js", "MongoDB", "Express", "Next.js", "TypeScript"]
-        },
-        {
-            position: "Python Developer",
-            company: "Self-Taught & Projects",
-            period: "2023",
-            location: "Bangladesh",
-            description: "Dove deep into Python programming, building automation scripts, bots, and mastering the fundamentals of software development and problem-solving.",
-            responsibilities: [
-                "Learning Python programming and core concepts",
-                "Building automation scripts and Discord bots",
-                "Exploring data structures and algorithms",
-                "Participating in competitive programming"
-            ],
-            technologies: ["Python", "Automation", "Scripting", "Discord.py", "Problem Solving"]
-        },
-        {
-            position: "Graphic Designer",
-            company: "Freelance",
-            period: "2022",
-            location: "Bangladesh",
-            description: "Started my creative journey as a graphic designer, creating logos, banners, and visual content. This sparked my passion for technology and digital creation.",
-            responsibilities: [
-                "Designing logos and brand identity materials",
-                "Creating social media graphics and banners",
-                "Working with clients on creative projects",
-                "Learning design principles and visual aesthetics"
-            ],
-            technologies: ["Photoshop", "Illustrator", "Canva", "Figma", "Visual Design"]
-        },
-        {
-            position: "Microsoft Office",
-            company: "Begin Learning",
-            period: "2021",
-            location: "Bangladesh",
-            description: "Started my journey into the digital world by learning Microsoft Office tools. This foundational step introduced me to computers and sparked my curiosity for technology.",
-            responsibilities: [
-                "Learning Microsoft Word, Excel, and PowerPoint",
-                "Creating documents and presentations",
-                "Understanding basic computer operations",
-                "Building foundational digital skills"
-            ],
-            technologies: ["MS Word", "MS Excel", "MS PowerPoint", "Computer Basics"]
+            technologies: ["Cybersecurity", "Secure Development", "Networking", "Problem Solving"]
         }
     ],
     projects: [
         {
             id: 1,
-            title: "Drishti",
-            category: "AI / LLM",
-            technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/Drishti.png",
-            description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali.",
-            link: "https://huggingface.co/red1-for-hek/drishti-ilm-x1"
+            title: "DecAI",
+            category: "Full-Stack / AI",
+            technologies: "React, TypeScript, Vite, TanStack Router, React Query, Supabase, Google Vertex AI, Cloudflare Workers, Tailwind CSS, shadcn/ui",
+            image: "/images/placeholder.webp",
+            description: "Modern responsive web app for AI-powered design generation. Built with React 19, TypeScript, and Vite. Features reusable accessible UI components, TanStack Router, React Query for server state, Supabase auth, and Google Vertex AI (Gemini) for design generation via Cloudflare Workers.",
+            link: ""
         },
         {
             id: 2,
-            title: "VoteChain",
-            category: "Blockchain",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/VoteChain.png",
-            description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking.",
-            link: "https://github.com/red1-for-hek/smart-election-by-blockchain"
+            title: "MunshiOnClick",
+            category: "CRM / ERP",
+            technologies: "Ruby on Rails, Bootstrap, HTML5, CSS3, JavaScript",
+            image: "/images/placeholder.webp",
+            description: "Business management web application built with Ruby on Rails. Developed responsive interfaces with Bootstrap and JavaScript, implemented MVC architecture and reusable Rails components, and supported CRM, ERP, and business management features.",
+            link: ""
         },
         {
-            id: 4,
-            title: "Flood Spaces 2.0",
-            category: "AI / ML",
-            technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
-            image: "/images/FloodSpaces.png",
-            description: "Predicts flood risks across Bangladesh up to one month in advance and sends early alerts to help people prepare.",
-            link: "https://github.com/red1-for-hek/Flood-Spaces-2.0"
-        },
-        {
-            id: 5,
-            title: "Phoenix 3.0",
-            category: "AI Assistant",
-            technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
-            image: "/images/Phoenix3.0.png",
-            description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience.",
-            link: "https://github.com/red1-for-hek/phoenix3.0"
-        },
-        {
-            id: 6,
-            title: "RedxChess",
-            category: "AI / Game Engine",
-            technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
-            image: "/images/RedxChess.png",
-            description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation.",
-            link: "/play"
-        },
-        {
-            id: 7,
-            title: "Prodesk",
-            category: "E-commerce",
-            technologies: "React, Node.js, MongoDB, Express, Stripe",
-            image: "/images/Prodesk.png",
-            description: "A complete e-commerce platform with secure checkout and smooth product browsing.",
-            link: "https://github.com/red1-for-hek/prodesk"
-        },
-        {
-            id: 8,
-            title: "HekTools",
-            category: "Security / Android",
-            technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
-            image: "/images/hektools.png",
-            description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes.",
+            id: 3,
+            title: "Gomer",
+            category: "Front-End",
+            technologies: "React, Tailwind CSS, REST APIs",
+            image: "/images/placeholder.webp",
+            description: "Responsive and interactive web application with reusable modular UI components. Integrated RESTful APIs for dynamic data, ensured cross-browser and mobile compatibility, and collaborated with backend developers to deliver end-to-end features.",
             link: ""
         }
     ],
     contact: {
-        email: "redoyanul1234@gmail.com",
-        github: "https://github.com/red1-for-hek",
-        linkedin: "https://linkedin.com/in/red1-for-hek",
-        twitter: "https://x.com/red_1_ul",
-        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
-        instagram: "https://www.instagram.com/red_1_ul"
+        email: "zaidali9585@gmail.com",
+        phone: "+92 302 1942137",
+        location: "Lahore, Pakistan",
+        github: "#",
+        linkedin: "#",
+        twitter: "#",
+        facebook: "#",
+        instagram: "#"
     },
     skills: {
         develop: {
-            title: "AI DEVELOPER",
-            description: "Building intelligent systems & AI solutions",
-            details: "Developing AI agents, chatbots, and machine learning models using Python, TensorFlow, and PyTorch. Specializing in LLMs, NLP, deep learning, and autonomous systems.",
-            tools: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LLMs", "NLP", "Deep Learning", "Chatbots", "AI Agents"]
+            title: "FRONTEND",
+            description: "Responsive UIs & modern web apps",
+            details: "Building scalable, accessible user interfaces with React, TypeScript, and modern CSS frameworks. Converting Figma designs into production-ready interfaces and integrating REST APIs with efficient async data handling.",
+            tools: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Vite", "TanStack Router", "React Query"]
         },
         design: {
             title: "FULL-STACK",
-            description: "Modern web development & scalable applications",
-            details: "Building responsive and performant web applications using React, Next.js, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
-            tools: ["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "PostgreSQL", "TailwindCSS", "REST APIs", "Docker", "Git"]
+            description: "Rails backends & production workflows",
+            details: "Collaborating across the stack with Ruby on Rails, REST APIs, real-time features via ActionCable, background jobs with Sidekiq, and role-based access with Pundit. Delivering production apps with Git and modern deployment workflows.",
+            tools: ["Ruby on Rails", "REST APIs", "ActionCable", "Sidekiq", "Pundit", "Supabase", "Cloudflare Workers", "Google Vertex AI", "Git", "Figma"]
         }
     }
 };
-
-

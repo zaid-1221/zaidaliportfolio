@@ -86,7 +86,7 @@ const Play = () => {
 
   // Chat state
   const [chatMessages, setChatMessages] = useState<ChatMessage[]>([
-    { role: 'assistant', content: 'Hello there! I am Redoyanul Haque 👋 Ask me anything you want to know!' }
+    { role: 'assistant', content: 'Hello there! I am Zaid Ali 👋 Ask me anything you want to know!' }
   ]);
   const [chatInput, setChatInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
@@ -374,10 +374,10 @@ const Play = () => {
           <div className="player-bar opponent-bar">
             <div className="player-info">
               <div className="player-avatar">
-                <img src="/images/mypic.jpeg" alt="Redoyanul" loading="lazy" decoding="async" />
+                <img src="/images/mypic.jpeg" alt="Zaid Ali" loading="lazy" decoding="async" />
               </div>
               <div className="player-details">
-                <span className="player-name">Redoyanul</span>
+                <span className="player-name">Zaid</span>
                 <span className="player-rating">{engineThinking ? '🤔 Thinking...' : 'ELO 3640'}</span>
               </div>
             </div>

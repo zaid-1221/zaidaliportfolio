@@ -10,6 +10,14 @@ export let lenis: Lenis | null = null;
 
 const Navbar = () => {
   useEffect(() => {
+    // Native scroll on mobile — Lenis.stop() sets html.lenis-stopped and
+    // preventDefault()s touch, which completely blocks scrolling.
+    if (window.innerWidth <= 768) {
+      document.documentElement.style.overflowY = "auto";
+      document.body.style.overflowY = "auto";
+      return;
+    }
+
     // Initialize Lenis smooth scroll
     lenis = new Lenis({
       duration: 1.7,
@@ -22,7 +30,7 @@ const Navbar = () => {
       infinite: false,
     });
 
-    // Start paused
+    // Start paused until the loading screen finishes
     lenis.stop();
 
     // Handle smooth scroll animation frame
@@ -61,6 +69,7 @@ const Navbar = () => {
 
     return () => {
       lenis?.destroy();
+      lenis = null;
     };
   }, []);
   return (
@@ -70,11 +79,11 @@ const Navbar = () => {
           ZA
         </a>
         <a
-          href="mailto:zaidali9585@gmail.com"
+          href="mailto:zaidalidev0@gmail.com"
           className="navbar-connect"
           data-cursor="disable"
         >
-          zaidali9585@gmail.com
+          zaidalidev0@gmail.com
         </a>
         <ul>
           <li>

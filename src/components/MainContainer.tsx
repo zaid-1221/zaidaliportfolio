@@ -13,16 +13,11 @@ import CallToAction from "./CallToAction";
 import setSplitText from "./utils/splitText";
 
 const MainContainer = ({ children }: PropsWithChildren) => {
-  const [isDesktopView, setIsDesktopView] = useState<boolean>(
-    window.innerWidth > 1024
-  );
-  const [isMobile] = useState<boolean>(window.innerWidth <= 768);
   const [shouldRenderCharacter, setShouldRenderCharacter] = useState(false);
 
   useEffect(() => {
     const resizeHandler = () => {
       setSplitText();
-      setIsDesktopView(window.innerWidth > 1024);
     };
     resizeHandler();
     window.addEventListener("resize", resizeHandler);
@@ -32,8 +27,13 @@ const MainContainer = ({ children }: PropsWithChildren) => {
   }, []);
 
   useEffect(() => {
-    if (window.innerWidth <= 1024) return;
+    if (window.innerWidth > 768) return;
+    import("./utils/initialFX").then((module) => {
+      module.initialFX?.();
+    });
+  }, []);
 
+  useEffect(() => {
     let timeoutId: ReturnType<typeof setTimeout> | undefined;
     let idleId: number | undefined;
     const win = window as Window & {
@@ -42,8 +42,11 @@ const MainContainer = ({ children }: PropsWithChildren) => {
     };
 
     const mountCharacter = () => setShouldRenderCharacter(true);
+    const isMobileView = window.innerWidth <= 768;
 
-    if (typeof win.requestIdleCallback === "function") {
+    if (isMobileView) {
+      timeoutId = setTimeout(mountCharacter, 300);
+    } else if (typeof win.requestIdleCallback === "function") {
       idleId = win.requestIdleCallback(mountCharacter, { timeout: 1500 });
     } else {
       timeoutId = setTimeout(mountCharacter, 1200);
@@ -64,9 +67,8 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       <Cursor />
       <Navbar />
       <SocialIcons />
-      {isDesktopView && !isMobile && shouldRenderCharacter && children}
       <div className="container-main">
-        <Landing />
+        <Landing>{shouldRenderCharacter && children}</Landing>
         <About />
         <WhatIDo />
         <Career />

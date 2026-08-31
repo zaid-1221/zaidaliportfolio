@@ -6,7 +6,6 @@ A modern, high-performance **3D developer portfolio website** built with **React
 
 If you’re a developer looking for a **portfolio template** that feels premium, interactive, and memorable—this repo is for you.
 
-> Live preview: https://www.redoyanulhaque.me/
 
 ---
 

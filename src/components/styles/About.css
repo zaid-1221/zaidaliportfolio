@@ -32,6 +32,21 @@
   word-spacing: 2px;
 }
 
+@media only screen and (max-width: 768px) {
+  .about-section {
+    position: relative;
+    z-index: 2;
+    margin-top: -48px;
+    padding-top: 8px;
+    width: 100%;
+  }
+
+  .about-me {
+    max-width: 100%;
+    padding: 24px 12px 0;
+  }
+}
+
 .about-me .split-word {
   display: inline-block;
   margin-right: 0.3em;

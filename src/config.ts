@@ -7,97 +7,119 @@ export const config = {
     },
     social: {
         github: "",
-        email: "zaidali9585@gmail.com",
+        email: "zaidalidev0@gmail.com",
         location: "Lahore, Pakistan",
         phone: "+92 302 1942137"
     },
     about: {
         title: "About Me",
-        description: "I am a Web Developer based in Lahore, Pakistan, with 1+ year of professional experience building responsive and modern web applications. I specialize in React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, Ruby on Rails, and REST APIs. I develop scalable user interfaces, integrate backend APIs, collaborate with cross-functional teams, and deliver production-ready applications using Git and modern development workflows. I speak Punjabi and Urdu natively, with professional fluency in English."
-    },
+        description: "I'm Zaid Ali, a Web Developer , with 1+ year of experience building responsive, production-ready applications. I work across Ruby on Rails , React, TypeScript, Tailwind CSS, and Git — designing clean user interfaces, integrating REST APIs, and shipping features end-to-end. I've contributed to projects spanning real estate, ERP, and AI-powered products"},
     experiences: [
         {
-            position: "Front-End Developer",
+            position: "Full Stack Developer",
             company: "2WayClick",
-            period: "2025 - 2026",
+            period: "2026",
             location: "Lahore, Pakistan",
-            description: "Developed responsive and user-friendly web applications using React, TypeScript, HTML, CSS, and JavaScript. Collaborated with Ruby on Rails backend developers and designers to ship production features from Figma to deployment.",
+            description: "Built and shipped full-stack web applications using React, TypeScript, and Ruby on Rails. Developed responsive frontends, integrated REST APIs, and contributed to backend features — collaborating with designers to deliver production-ready products from Figma to deployment.",
             responsibilities: [
                 "Built reusable UI components with Tailwind CSS and Bootstrap for consistent design",
-                "Integrated REST APIs and handled asynchronous data efficiently",
-                "Collaborated with Ruby on Rails backend developers to implement new features",
-                "Fixed UI bugs, improved performance, and optimized user experience",
+                "Developed and maintained Ruby on Rails backend features and REST APIs",
+                "Integrated REST APIs and handled asynchronous data efficiently across the stack",
+                "Collaborated with designers and backend developers to implement new features end-to-end",
+                "Fixed bugs, improved performance, and optimized user experience on frontend and backend",
                 "Converted Figma designs into responsive web interfaces",
                 "Used Git/GitHub for version control, code reviews, and team collaboration",
                 "Participated in testing, debugging, deployment, and ongoing maintenance"
             ],
-            technologies: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Bootstrap", "REST APIs", "Git"]
+            technologies: ["React", "TypeScript", "JavaScript", "Ruby on Rails", "HTML", "CSS", "Tailwind CSS", "Bootstrap", "REST APIs", "Git"]
         },
         {
-            position: "BS Cybersecurity (In Progress)",
-            company: "NCBA&E University",
-            period: "Present",
+            position: "Front-End Developer",
+            company: "A2Nexus",
+            period: "2025",
             location: "Lahore, Pakistan",
-            description: "Pursuing a Bachelor of Science in Cybersecurity with a CGPA of 3.0 / 4.0, building a strong foundation in secure systems alongside professional web development work.",
+            description: "Developed responsive and user-friendly web applications using React, TypeScript, HTML, CSS, and JavaScript. Built reusable UI components, integrated REST APIs, and collaborated with cross-functional teams to deliver polished front-end experiences.",
             responsibilities: [
-                "Studying cybersecurity fundamentals and secure application practices",
-                "Applying academic knowledge to real-world web development projects",
-                "Balancing coursework with professional software delivery"
+                "Built responsive web interfaces with React, TypeScript, and modern CSS",
+                "Created reusable UI components for consistent and scalable design",
+                "Integrated REST APIs and managed asynchronous data flows",
+                "Collaborated with designers to convert layouts into production-ready interfaces",
+                "Fixed UI bugs, improved performance, and optimized user experience",
+                "Used Git/GitHub for version control and team collaboration"
             ],
-            technologies: ["Cybersecurity", "Secure Development", "Networking", "Problem Solving"]
+            technologies: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS", "REST APIs", "Git"]
         }
     ],
     projects: [
         {
             id: 1,
             title: "DecAI",
-            category: "Full-Stack / AI",
-            technologies: "React, TypeScript, Vite, TanStack Router, React Query, Supabase, Google Vertex AI, Cloudflare Workers, Tailwind CSS, shadcn/ui",
+            category: "Full Stack Developer / AI",
+            technologies: "React 19, TypeScript, Vite, TanStack Router, TanStack React Query, TanStack Start, Nitro, Tailwind CSS, shadcn/ui, Radix UI, Supabase, Google Vertex AI, Cloudflare Workers",
             image: "/images/placeholder.webp",
-            description: "Modern responsive web app for AI-powered design generation. Built with React 19, TypeScript, and Vite. Features reusable accessible UI components, TanStack Router, React Query for server state, Supabase auth, and Google Vertex AI (Gemini) for design generation via Cloudflare Workers.",
+            description: "AI-powered interior, exterior, and garden design platform. Built the frontend with React 19, TypeScript, and Vite; implemented routing and data management with TanStack Router and React Query; designed responsive, accessible UI with Tailwind CSS, shadcn/ui, and Radix UI. Developed backend APIs using TanStack Start + Nitro, integrated Supabase for auth and data storage, and Google Vertex AI (Gemini) for design generation. Deployed on Cloudflare Workers with Vercel support via Nitro.",
             link: ""
         },
         {
             id: 2,
             title: "MunshiOnClick",
-            category: "CRM / ERP",
-            technologies: "Ruby on Rails, Bootstrap, HTML5, CSS3, JavaScript",
+            category: "Full Stack Developer / ERP",
+            technologies: "Ruby on Rails, Bootstrap, ERB, HTML5, JavaScript",
             image: "/images/placeholder.webp",
-            description: "Business management web application built with Ruby on Rails. Developed responsive interfaces with Bootstrap and JavaScript, implemented MVC architecture and reusable Rails components, and supported CRM, ERP, and business management features.",
+            description: "Cloud-based ERP software in Pakistan built for manufacturing, distribution, real estate, retail, and services businesses. Contributed as a full stack developer, building responsive and user-friendly interfaces using Ruby on Rails (ERB views) and Bootstrap, with a focus on clean UI implementation and consistent design across the ERP's various modules.",
             link: ""
         },
         {
             id: 3,
-            title: "Gomer",
-            category: "Front-End",
-            technologies: "React, Tailwind CSS, REST APIs",
+            title: "MySaleJet",
+            category: "Frontend Developer / React",
+            technologies: "React.js, Tailwind CSS",
             image: "/images/placeholder.webp",
-            description: "Responsive and interactive web application with reusable modular UI components. Integrated RESTful APIs for dynamic data, ensured cross-browser and mobile compatibility, and collaborated with backend developers to deliver end-to-end features.",
+            description: "Lead management platform. Contributed to frontend development using React, building interactive UI components and ensuring a smooth, responsive user experience across the platform.",
+            link: ""
+        },
+        {
+            id: 4,
+            title: "Gomer",
+            category: "Frontend Developer / AI",
+            technologies: "React, Tailwind CSS",
+            image: "/images/placeholder.webp",
+            description: "AI coworker/agent that autonomously manages ad campaigns, generates reports, and ships real work — running 24/7 inside Slack. Built responsive UI components using React and Tailwind CSS, focusing on clean design and smooth user interaction for the platform's dashboard and reporting interfaces.",
             link: ""
         }
     ],
     contact: {
-        email: "zaidali9585@gmail.com",
+        email: "zaidalidev0@gmail.com",
         phone: "+92 302 1942137",
         location: "Lahore, Pakistan",
-        github: "#",
-        linkedin: "#",
-        twitter: "#",
-        facebook: "#",
-        instagram: "#"
+        github: "https://github.com/zaidalidev0",
+        linkedin: "https://www.linkedin.com/in/zaidali-dev/",
+        twitter: "https://x.com/zaidalidev0",
     },
-    skills: {
-        develop: {
+    skills: [
+        {
             title: "FRONTEND",
             description: "Responsive UIs & modern web apps",
             details: "Building scalable, accessible user interfaces with React, TypeScript, and modern CSS frameworks. Converting Figma designs into production-ready interfaces and integrating REST APIs with efficient async data handling.",
             tools: ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "Vite", "TanStack Router", "React Query"]
         },
-        design: {
-            title: "FULL-STACK",
-            description: "Rails backends & production workflows",
-            details: "Collaborating across the stack with Ruby on Rails, REST APIs, real-time features via ActionCable, background jobs with Sidekiq, and role-based access with Pundit. Delivering production apps with Git and modern deployment workflows.",
-            tools: ["Ruby on Rails", "REST APIs", "ActionCable", "Sidekiq", "Pundit", "Supabase", "Cloudflare Workers", "Google Vertex AI", "Git", "Figma"]
+        {
+            title: "FULL STACK DEVELOPMENT",
+            description: "End-to-end feature delivery",
+            details: "Building and shipping complete web applications from UI to deployment. Working across React frontends and Ruby on Rails backends to deliver production-ready features collaboratively with designers and backend developers.",
+            tools: ["React", "TypeScript", "Ruby on Rails", "REST APIs", "Git", "Vite", "Supabase", "Figma"]
+        },
+        {
+            title: "BACKEND & APIs",
+            description: "Rails backends & server-side logic",
+            details: "Developing robust backend systems with Ruby on Rails, RESTful API design, database modeling, authentication, background jobs with Sidekiq, real-time features via ActionCable, and role-based access with Pundit.",
+            tools: ["Ruby on Rails", "PostgreSQL", "REST APIs", "Sidekiq", "ActionCable", "Pundit", "MVC Architecture"]
+        },
+        {
+            title: "API INTEGRATION",
+            description: "Connecting frontends to data & services",
+            details: "Integrating RESTful APIs into React applications, handling asynchronous data efficiently, managing server state with React Query, and building reliable data flows between client and backend services.",
+            tools: ["REST APIs", "React Query", "JavaScript", "TypeScript", "Fetch", "JSON", "Async Data Handling"]
         }
-    }
+    ]
 };

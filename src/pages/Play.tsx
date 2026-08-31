@@ -48,12 +48,14 @@ Profile:
 - Core tools: React, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, Bootstrap, Ruby on Rails, ActionCable, RESTful APIs, Sidekiq, Pundit, Vite, TanStack Router, React Query, Cloudflare Workers, Google Vertex AI, Git, Supabase, Figma.
 
 Professional experience:
-- 2WayClick (April 2025 – March 2026): Front-End Developer. Built responsive apps with React/TypeScript, reusable UI with Tailwind/Bootstrap, REST API integration, collaboration with Rails backend, Figma-to-web conversion, Git/GitHub workflows, testing, debugging, deployment, and maintenance.
+- 2WayClick (2026): Full Stack Developer. Built full-stack apps with React/TypeScript and Ruby on Rails, reusable UI with Tailwind/Bootstrap, REST API development and integration, Figma-to-web conversion, Git/GitHub workflows, testing, debugging, deployment, and maintenance.
+- A2Nexus (2025): Front-End Developer. Built responsive apps with React/TypeScript, reusable UI components, REST API integration, designer collaboration, Git/GitHub workflows, and performance optimization.
 
 Portfolio projects:
-- DecAI: Full-Stack Developer. React 19, TypeScript, Vite, TanStack Router, React Query, Tailwind CSS, shadcn/ui, Radix UI, Supabase auth, Google Vertex AI (Gemini) for AI design generation, Cloudflare Workers.
-- MunshiOnClick: Front-End Developer. Ruby on Rails, Bootstrap, HTML5, CSS3, JavaScript. CRM/ERP/business management features with MVC and reusable Rails components.
-- Gomer: Front-End Developer. React, Tailwind CSS, REST APIs. Responsive modular UI, API integration, performance and UX improvements.
+- DecAI: Full Stack Developer. AI-powered interior/exterior/garden design platform. React 19, TypeScript, Vite, TanStack Router, React Query, TanStack Start, Nitro, Tailwind CSS, shadcn/ui, Radix UI, Supabase, Google Vertex AI (Gemini), Cloudflare Workers.
+- MunshiOnClick: Full Stack Developer. Cloud-based ERP for manufacturing, distribution, real estate, retail, and services in Pakistan. Ruby on Rails (ERB), Bootstrap, HTML5, CSS3, JavaScript.
+- MySaleJet: Frontend Developer. Lead management platform. React, Tailwind CSS. Interactive UI components and responsive user experience.
+- Gomer: Frontend Developer. AI agent for ads and reporting that runs 24/7 inside Slack. React, Tailwind CSS. Dashboard and reporting interfaces.
 
 Contact:
 - Email: zaidali9585@gmail.com
@@ -259,6 +261,10 @@ const Play = () => {
 
       const data = await response.json();
 
+      if (!response.ok) {
+        throw new Error(data.error || `Request failed (${response.status})`);
+      }
+
       if (data.choices && data.choices[0]?.message?.content) {
         const assistantMessage: ChatMessage = {
           role: 'assistant',
@@ -266,13 +272,14 @@ const Play = () => {
         };
         setChatMessages(prev => [...prev, assistantMessage]);
       } else {
-        throw new Error('Invalid response');
+        throw new Error(data.error || 'Invalid response from chat API');
       }
     } catch (error) {
       console.error('Chat error:', error);
+      const errorDetail = error instanceof Error ? error.message : 'Unknown error';
       const errorMessage: ChatMessage = {
         role: 'assistant',
-        content: 'Sorry, having some connection issues. Try again? 😅'
+        content: `Sorry, chat isn't working right now. ${errorDetail}`
       };
       setChatMessages(prev => [...prev, errorMessage]);
     } finally {

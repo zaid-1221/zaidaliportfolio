@@ -37,25 +37,37 @@ body {
   overflow: hidden;
 }
 
-/* Allow scrolling on mobile */
+/* Native scrolling on mobile — Lenis is disabled at this breakpoint */
 @media only screen and (max-width: 768px) {
+  html,
+  html.lenis,
+  html.lenis-stopped,
   body {
-    overflow: auto !important;
-    height: auto !important;
-    min-height: 100vh !important;
-    touch-action: manipulation;
-  }
-
-  html {
     overflow-x: hidden !important;
     overflow-y: auto !important;
-    touch-action: manipulation;
+    height: auto !important;
+    min-height: 100vh !important;
+    touch-action: pan-y;
+    overscroll-behavior-y: auto;
+    -webkit-overflow-scrolling: touch;
+    --cWidth: 100%;
+  }
+
+  /* Avoid a nested scroll container — overflow-x: hidden makes overflow-y auto */
+  .main-body {
+    overflow: visible !important;
   }
 
   /* Ensure no fixed elements block scrolling */
   .container-main {
     position: static !important;
     height: auto !important;
+  }
+
+  .landing-circle1,
+  .landing-circle2,
+  .nav-fade {
+    pointer-events: none;
   }
 }
 

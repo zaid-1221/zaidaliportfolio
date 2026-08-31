@@ -13,48 +13,69 @@ const Work = () => {
     // Disable pinning on mobile to allow scrolling
     if (window.innerWidth <= 768) return;
 
-    let translateX: number = 0;
+    const section = document.querySelector(".work-section") as HTMLElement;
+    const flex = document.querySelector(".work-flex") as HTMLElement;
+    if (!section || !flex) return;
 
-    function setTranslateX() {
-      const box = document.getElementsByClassName("work-box");
-      if (box.length === 0) return;
-      const rectLeft = document
-        .querySelector(".work-container")!
-        .getBoundingClientRect().left;
-      const rect = box[0].getBoundingClientRect();
-      const parentWidth = box[0].parentElement!.getBoundingClientRect().width;
-      let padding: number =
-        parseInt(window.getComputedStyle(box[0]).padding) / 2;
-      translateX = rect.width * box.length - (rectLeft + parentWidth) + padding;
-    }
+    let timeline: gsap.core.Timeline;
 
-    setTranslateX();
+    const getTranslateX = () => {
+      const boxes = flex.querySelectorAll(".work-box");
+      if (boxes.length === 0) return 0;
 
-    let timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".work-section",
-        start: "top top",
-        end: `+=${translateX}`,
-        scrub: 1,
-        pin: true,
-        pinSpacing: true,
-        anticipatePin: 1,
-        id: "work",
-        invalidateOnRefresh: true,
-      },
-    });
+      const sectionRect = section.getBoundingClientRect();
+      const lastBox = boxes[boxes.length - 1] as HTMLElement;
+      const lastBoxRect = lastBox.getBoundingClientRect();
+      const currentX = Number(gsap.getProperty(flex, "x")) || 0;
+      const paddingRight = parseFloat(getComputedStyle(flex).paddingRight) || 0;
+      const naturalRight = lastBoxRect.right - currentX;
 
-    timeline.to(".work-flex", {
-      x: -translateX,
-      ease: "none",
-    });
+      return Math.max(0, naturalRight - sectionRect.right + paddingRight);
+    };
 
-    // Refresh ScrollTrigger after layout settles
-    ScrollTrigger.refresh();
+    const setupScroll = () => {
+      timeline?.kill();
+      ScrollTrigger.getById("work")?.kill();
 
-    // Clean up
+      timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: section,
+          start: "top top",
+          end: () => `+=${getTranslateX()}`,
+          scrub: 1,
+          pin: true,
+          pinSpacing: true,
+          anticipatePin: 1,
+          id: "work",
+          invalidateOnRefresh: true,
+        },
+      });
+
+      timeline.to(flex, {
+        x: () => -getTranslateX(),
+        ease: "none",
+      });
+    };
+
+    setupScroll();
+
+    const handleResize = () => {
+      if (window.innerWidth <= 768) return;
+      setupScroll();
+      ScrollTrigger.refresh();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    const refreshTimer = window.setTimeout(() => {
+      setupScroll();
+      ScrollTrigger.refresh();
+    }, 500);
+
     return () => {
-      timeline.kill();
+      window.removeEventListener("resize", handleResize);
+      window.clearTimeout(refreshTimer);
+      timeline?.kill();
       ScrollTrigger.getById("work")?.kill();
     };
   }, []);

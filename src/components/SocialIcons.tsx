@@ -5,7 +5,7 @@ import {
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbBrandGmail, TbNotes } from "react-icons/tb";
-import { useEffect } from "react";
+import  { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
 
 const SocialIcons = () => {

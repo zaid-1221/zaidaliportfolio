@@ -9,7 +9,7 @@ import  { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
 
 const SocialIcons = () => {
-  useEffect(() => {
+   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
 
     social.querySelectorAll("span").forEach((item) => {

@@ -82,7 +82,7 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href={config.contact.github}
+              href="https://github.com/zaid-1221"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"
@@ -91,7 +91,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href={config.contact.linkedin}
+              href="https://www.linkedin.com/in/zaidali-dev/"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"
@@ -100,7 +100,7 @@ const Contact = () => {
               Linkedin <MdArrowOutward />
             </a>
             <a
-              href={config.contact.twitter}
+              href="https://x.com/zaidalidev0"
               target="_blank"
               rel="noopener noreferrer"
               data-cursor="disable"

@@ -6,7 +6,7 @@ export const config = {
         description: "Web Developer with 1+ year of professional experience building responsive and modern web applications using React, TypeScript, JavaScript, HTML, CSS, Tailwind CSS, Bootstrap, Ruby on Rails, and REST APIs."
     },
     social: {
-        github: "",
+        github: "https://github.com/zaid-1221",
         email: "zaidalidev0@gmail.com",
         location: "Lahore, Pakistan",
         phone: "+92 302 1942137"
@@ -56,7 +56,13 @@ export const config = {
             title: "DecAI",
             category: "Full Stack Developer / AI",
             technologies: "React 19, TypeScript, Vite, TanStack Router, TanStack React Query, TanStack Start, Nitro, Tailwind CSS, shadcn/ui, Radix UI, Supabase, Google Vertex AI, Cloudflare Workers",
-            image: "/images/placeholder.webp",
+            image: "/images/decai/landing.png",
+            images: [
+                "/images/decai/landing.png",
+                "/images/decai/home.png",
+                "/images/decai/interior-design.png",
+                "/images/decai/furniture-replace.png"
+            ],
             description: "AI-powered interior, exterior, and garden design platform. Built the frontend with React 19, TypeScript, and Vite; implemented routing and data management with TanStack Router and React Query; designed responsive, accessible UI with Tailwind CSS, shadcn/ui, and Radix UI. Developed backend APIs using TanStack Start + Nitro, integrated Supabase for auth and data storage, and Google Vertex AI (Gemini) for design generation. Deployed on Cloudflare Workers with Vercel support via Nitro.",
             link: ""
         },
@@ -65,8 +71,14 @@ export const config = {
             title: "MunshiOnClick",
             category: "Full Stack Developer / ERP",
             technologies: "Ruby on Rails, Bootstrap, ERB, HTML5, JavaScript",
-            image: "/images/placeholder.webp",
-            description: "Cloud-based ERP software in Pakistan built for manufacturing, distribution, real estate, retail, and services businesses. Contributed as a full stack developer, building responsive and user-friendly interfaces using Ruby on Rails (ERB views) and Bootstrap, with a focus on clean UI implementation and consistent design across the ERP's various modules.",
+            image: "/images/munshionclick/landing.png",
+            images: [
+                "/images/munshionclick/landing.png",
+                "/images/munshionclick/dashboard.png",
+                "/images/munshionclick/reports.png",
+                "/images/munshionclick/ledger.png"
+            ],
+            description: "Cloud-based ERP software in Pakistan built for manufacturing, distribution, real estate, retail, and services businesses. Contributed as a full stack developer, building responsive and user-friendly interfaces using Ruby on Rails (ERB views) and Bootstrap — including the marketing landing page, dashboards with analytics, stock & sales reports, and ledger books modules.",
             link: ""
         },
         {
@@ -74,8 +86,14 @@ export const config = {
             title: "MySaleJet",
             category: "Frontend Developer / React",
             technologies: "React.js, Tailwind CSS",
-            image: "/images/placeholder.webp",
-            description: "Lead management platform. Contributed to frontend development using React, building interactive UI components and ensuring a smooth, responsive user experience across the platform.",
+            image: "/images/mysalejet/dashboard.png",
+            images: [
+                "/images/mysalejet/dashboard.png",
+                "/images/mysalejet/sales.png",
+                "/images/mysalejet/database.png",
+                "/images/mysalejet/pipeline.png"
+            ],
+            description: "Lead management platform for real estate sales teams. Contributed to frontend development using React and Tailwind CSS — building dashboard analytics, sales tracking, lead database views, and pipeline Kanban boards with interactive UI components and a responsive user experience.",
             link: ""
         },
         {
@@ -83,8 +101,14 @@ export const config = {
             title: "Gomer",
             category: "Frontend Developer / AI",
             technologies: "React, Tailwind CSS",
-            image: "/images/placeholder.webp",
-            description: "AI coworker/agent that autonomously manages ad campaigns, generates reports, and ships real work — running 24/7 inside Slack. Built responsive UI components using React and Tailwind CSS, focusing on clean design and smooth user interaction for the platform's dashboard and reporting interfaces.",
+            image: "/images/gomer/hero.png",
+            images: [
+                "/images/gomer/hero.png",
+                "/images/gomer/how-it-works.png",
+                "/images/gomer/testimonials.png",
+                "/images/gomer/footer.png"
+            ],
+            description: "AI coworker/agent that autonomously manages ad campaigns, generates reports, and ships real work — running 24/7 inside Slack. Built responsive UI components using React and Tailwind CSS — including the landing hero, how-it-works flow, customer testimonials, and marketing pages with clean design and smooth user interaction.",
             link: ""
         }
     ],

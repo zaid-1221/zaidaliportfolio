@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
+import ImageScrollGallery from "./ImageScrollGallery";
 
 interface Props {
   image: string;
+  images?: string[];
   alt?: string;
   video?: string;
   link?: string;
@@ -23,6 +25,18 @@ const WorkImage = (props: Props) => {
       setVideo(blobUrl);
     }
   };
+
+  if (props.images?.length) {
+    return (
+      <div className="work-image">
+        <ImageScrollGallery
+          images={props.images}
+          alt={props.alt ?? ""}
+          className="image-gallery--work"
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="work-image">

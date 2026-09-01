@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ImageScrollGallery from "../components/ImageScrollGallery";
 import { config } from "../config";
 import "./MyWorks.css";
 
@@ -22,7 +23,15 @@ const MyWorks = () => {
             <>
               <div className="myworks-card-number">0{index + 1}</div>
               <div className="myworks-card-image">
-                <img src={project.image} alt={project.title} loading="lazy" decoding="async" />
+                {project.images?.length ? (
+                  <ImageScrollGallery
+                    images={project.images}
+                    alt={project.title}
+                    className="image-gallery--myworks"
+                  />
+                ) : (
+                  <img src={project.image} alt={project.title} loading="lazy" decoding="async" />
+                )}
               </div>
               <div className="myworks-card-info">
                 <h3>{project.title}</h3>

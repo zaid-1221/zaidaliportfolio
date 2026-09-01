@@ -100,7 +100,12 @@ const Work = () => {
                 <h4>Tools and features</h4>
                 <p>{project.technologies}</p>
               </div>
-              <WorkImage image={project.image} alt={project.title} link={project.link} />
+              <WorkImage
+                image={project.image}
+                images={project.images}
+                alt={project.title}
+                link={project.link}
+              />
             </div>
           ))}
           {/* See All Works Button */}

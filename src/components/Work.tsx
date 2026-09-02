@@ -54,6 +54,10 @@ const Work = () => {
       timeline.to(flex, {
         x: () => -getTranslateX(),
         ease: "none",
+        // Keep x on whole pixels so transformed screenshots stay sharp
+        modifiers: {
+          x: (value) => `${Math.round(parseFloat(value))}px`,
+        },
       });
     };
 
